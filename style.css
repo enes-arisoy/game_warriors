@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+i {
+    font-size: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.5rem 0;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+p,
+small,
+strong {
+    line-height: 2;
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    padding: 9px 20px;
+    color: #eee;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.badge.new {
+    background-color: #ff205f;
+}
+
+.badge.strategy {
+    background-color: #4eae60;
+}
+
+.badge.racing {
+    background-color: #694eae;
+}
+
+.badge.rgb,
+.badge.adventure {
+    background-color: #40abf5;
+}
+
+.badge.tournaments {
+    background-color: #fb6e10;
+}
+
+.badge.premium-tournament {
+    background-color: #ffb320;
+    color: #252525;
+}
+
+.shade {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Header Style */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        color: #ffb320;
+    }
+
+    p {
+        color: #eee;
+        font-size: 1.6em;
+
+
+        span {
+            color: #ffb320;
+        }
+    }
+
+}
+
+header {
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #ffb320;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #ffb320;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+
+    .strip {
+        display: block;
+        height: 1px;
+        background-color: #ffb320;
+        margin: 4px 0;
+    }
+}
+
+nav ul {
+    margin: 10px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+
+    font-size: 1em;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ffb320;
+    transition: all 0.3s ease;
+}
+
+#login-register-button {
+    background-color: #ffb320;
+    color: #131313;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+
+/* Hero Style */
+
+.box {
+    position: relative;
+
+}
+
+
+#hero {
+    background-image: url('./images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.hero-marketing-text {
+    max-width: 1200px;
+    margin: -30px auto 0;
+    position: absolute;
+    top: 40;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+
+    h1 {
+        font-size: 3.5em;
+        color: #eee;
+        font-weight: 400;
+        margin: 0.5em 0;
+    }
+
+    span {
+        color: #ffb320;
+    }
+
+    h5 {
+        color: #eee;
+        font-size: 0.85em;
+        font-weight: 300;
+        max-width: 500px;
+        line-height: 2;
+        margin-bottom: 2.5em;
+    }
+
+    .cta-button {
+        background-color: #ffb320;
+        color: #131313;
+        border-radius: 25px;
+        padding: 15px 25px;
+        font-size: 0.85em;
+        font-weight: 600;
+        cursor: pointer;
+
+    }
+}
+
+/* Latest News */
+
+#latest-news {
+    margin-bottom: 75px;
+
+
+    .flex {
+
+        max-width: 100%;
+        padding: 0;
+        height: 70px;
+
+
+        h5 {
+            flex-basis: 25%;
+            background-color: #ffb320;
+            padding: 25px;
+            margin: 0;
+            text-align: right;
+            color: #252525;
+            font-size: 1.3em;
+            font-weight: 400;
+        }
+
+        #latest-news-container {
+            background-color: #131313;
+            position: relative;
+            flex-basis: 75%;
+            padding: 25px;
+
+
+            .badge {
+                margin-right: 20px;
+            }
+
+            .latest-news-text {
+                color: #eee;
+            }
+        }
+    }
+}
+
+/* Game Types */
+
+#game-type-boxes {
+    margin-bottom: 75px;
+
+    .box {
+        flex-basis: 30%;
+        position: relative;
+        height: 380px;
+    }
+
+    .box.new {
+        background: url(./images/ninja.jpg) top center no-repeat;
+        background-size: cover;
+    }
+
+    .box.strategy {
+        background: url(./images/strategy.jpg) top center no-repeat;
+        background-size: cover;
+    }
+
+    .box.rgb {
+        background: url(./images/gta.jpg) top center no-repeat;
+        background-size: cover;
+    }
+
+    .box.racing {
+        background: url(./images/pubg.jpg) top center no-repeat;
+        background-size: cover;
+    }
+
+    .badge {
+        position: relative;
+        z-index: 2;
+        top: 20px;
+
+    }
+
+    .contents {
+        position: absolute;
+        z-index: 2;
+        bottom: 20px;
+        left: 0;
+        color: #eee;
+        padding: 0 35px 0 25px;
+
+        a {
+            font-size: 0.8em;
+            font-weight: 300;
+            color: #999;
+        }
+    }
+}
+
+/* Recent Games */
+
+#recent-games {
+    background: url(./images/futuristic-ninja.png) center right no-repeat;
+    background-size: 460px;
+
+
+    background-color: #eef2f6;
+    border-top: 1px solid #d6dee7;
+    border-bottom: 1px solid #d6dee7;
+    padding: 70px 0 120px;
+
+    h1 {
+        text-align: center;
+        font-weight: 400;
+
+    }
+
+    .box {
+        position: relative;
+        flex-basis: 31%;
+        background-color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+
+
+        .badge {
+            position: absolute;
+            top: 20px;
+            opacity: 90%;
+            z-index: 2;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .box-lower-section {
+            padding: 20px;
+
+            p {
+                color: #999;
+            }
+
+            a {
+                color: #666;
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    .box:hover img {
+        transform: scale(1.1);
+        transition: all 0.3s ease-out;
+    }
+
+
+}
+
+/* Tournaments */
+
+#tournaments {
+    background-color: #393434;
+    padding: 125px 0 105px;
+
+    .flex {
+        position: relative;
+
+        .badge {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            opacity: 80%;
+            z-index: 2;
+        }
+
+        .badge.tournaments {
+            top: -32px;
+            left: 15px;
+        }
+
+
+
+        .box {
+            background-color: #131313;
+
+            flex-basis: 32%;
+            position: relative;
+            border-radius: 10px;
+
+            overflow: hidden;
+
+        }
+
+        .tournament-image {
+            width: 100%;
+
+            img {
+                max-height: 160px;
+            }
+
+        }
+
+        .tournament-content {
+            float: left;
+            width: 80%;
+            padding: 30px 20px 40px;
+
+            h3 {
+                color: #ffb320;
+                font-size: 1.5em;
+            }
+
+            label {
+                color: #999;
+                font-size: 0.75em;
+            }
+
+            strong {
+                color: #eee;
+                font-size: 0.75em;
+            }
+
+            .prizes {
+                color: #ffb320;
+                display: inline-block;
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+/* Recent Reviews */
+
+#recent-reviews {
+    padding: 75px 0 50px;
+}
+
+#recent-reviews h1 {
+    text-align: center;
+    margin-bottom: 1.65em;
+    font-weight: 400;
+}
+
+#recent-reviews .flex .box {
+    flex-basis: 23%;
+    text-align: center;
+    position: relative;
+
+    .recent-review-image img {
+        border-radius: 10px;
+        margin-bottom: 0.75em;
+    }
+
+    .rating-badge {
+        position: absolute;
+        right: 15px;
+        top: -15px;
+        color: #eee;
+        font-size: 14px;
+        padding: 0.8rem;
+        border-radius: 50%;
+    }
+
+    .gold {
+        background-color: goldenrod;
+
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .blue {
+        background-color: blueviolet;
+    }
+
+    .purple {
+        background-color: purple;
+    }
+
+
+    .box-info {
+        h4 {
+            font-weight: 400;
+            font-size: 1.2em;
+        }
+
+        p {
+            color: #666;
+            font-size: 0.75em;
+        }
+    }
+
+}
+
+/* Post-Comment */
+
+#post-comment {
+    background-color: #393434;
+    padding: 75px 50px;
+
+    .game-warrior {
+        flex-basis: 28%;
+        position: relative;
+        margin-bottom: 20px;
+
+
+        i {
+            color: #ffb320;
+            font-size: 3rem;
+
+        }
+
+        h1 {
+            color: #eee;
+        }
+
+        span {
+            color: #ffb320;
+        }
+
+        p {
+            color: #eee;
+            font-weight: 600;
+        }
+    }
+
+    .posts-comments-box {
+        flex-basis: 33%;
+        background-color: #131313;
+        padding: 20px 20px 25px;
+        border: 1px solid #4a4a4a;
+        border-radius: 8px;
+        height: 600px;
+
+        h3 {
+            color: #eee;
+        }
+
+        .post-item {
+            margin-top: 25px;
+        }
+
+        .post-item:first-child {
+            margin-top: 0;
+        }
+
+        .post-item:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .post-item img {
+            float: left;
+            width: 30%;
+            max-height: 140px;
+        }
+
+        .post-item>div {
+            float: right;
+            margin-left: 5%;
+            width: 65%;
+        }
+
+        .post-item>div h5 {
+            color: #ffb320;
+            font-size: 0.8em;
+            margin-top: 0;
+
+        }
+
+        .post-item>div p {
+            color: #eee;
+            margin: 5px 0;
+            font-size: 0.8em;
+        }
+
+        .post-item>div small {
+            color: #999;
+            font-size: 0.75em;
+        }
+
+    }
+
+    .comments-item {
+        margin-top: 1em;
+        display: flex;
+        align-items: center;
+
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        i {
+            width: 23%;
+            height: auto;
+            border-radius: 50%;
+            float: left;
+            color: #999;
+        }
+
+        >div {
+            float: right;
+            margin-left: 7%;
+            width: 70%;
+
+            small {
+                color: #e92159;
+            }
+
+            p {
+                color: #eee;
+
+            }
+
+            h5 {
+                color: #ffb320;
+                font-size: 0.8em;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #252525;
+    padding: 25px 0 20px;
+    place-items: center;
+    text-align: center;
+    border-top: 1px solid #999999b0;
+
+    .flex {
+        margin-bottom: 30px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            a {
+                color: #ddd;
+                font-size: 0.8em;
+            }
+        }
+    }
+
+    small {
+        color: #ddd;
+        font-size: 0.9em;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .flex {
+        max-width: 1000px;
+    }
+
+    .latest-news-item {
+        font-size: 0.8em;
+    }
+
+    .tournaments .box .tournament-content {
+        margin-left: 15px;
+
+        h3 {
+            font-size: 1.4em;
+            margin-bottom: 0.2em;
+        }
+    }
+
+
+}
+
+
+@media (max-width: 991px) {
+    .flex {
+        max-width: 720px;
+    }
+
+    nav ul li {
+        margin: 0 12px;
+        font-size: 0.8em;
+    }
+
+    #latest-news .flex h5 {
+        width: 15%;
+    }
+
+    #game-type-boxes .flex {
+        flex-wrap: wrap;
+    }
+
+    #game-type-boxes .box {
+        flex-basis: 50%;
+    }
+
+    #tournaments .box {
+        flex-basis: 42%;
+    }
+
+    #tournaments .box {
+
+        .tournaments-image {
+            float: none;
+            width: 100%;
+            margin-bottom: 10px;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .tournament-content {
+            margin-left: 0;
+            width: 100%;
+        }
+
+    }
+
+    #recent-reviews .flex {
+        flex-wrap: wrap;
+    }
+
+    #recent-reviews .box {
+        flex-basis: 42% !important;
+        margin-bottom: 45px;
+    }
+
+    #post-comment {
+        .flex {
+            flex-wrap: wrap;
+        }
+
+        .game-warrior {
+            flex-basis: 100%;
+            margin-bottom: 40px;
+        }
+
+        .posts-comments-box {
+            flex-basis: 48%;
+        }
+    }
+
+    footer .flex {
+        flex-wrap: wrap-reverse;
+    }
+
+    footer ul {
+        flex-basis: 100%;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .flex {
+        max-width: 540px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 101%;
+        left: 0;
+        width: 100%;
+        background-color: #131313;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+
+    }
+
+    nav ul.open {
+        display: block;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 0;
+        padding: 15px 0 15px 20px;
+        border-bottom: 1px solid #ffb320;
+
+        a {
+            font-size: 1em;
+        }
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-top: 2px;
+    }
+
+    #hero {
+        .hero-marketing-text {
+            margin-top: -85px;
+
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+    }
+
+    #latest-news .flex h5 {
+        display: none;
+
+    }
+
+    #latest-news-container {
+        flex-basis: 100% !important;
+    }
+
+    #recent-games {
+        padding: 60px 0;
+        background: none;
+    }
+
+    #game-type-boxes .box,
+    #recent-games .box {
+
+        flex-basis: 100% !important;
+        margin-bottom: 30px !important;
+    }
+
+    #recent-games .flex,
+    #tournaments .flex {
+        flex-wrap: wrap;
+    }
+
+    #tournaments .box {
+        flex-basis: 100% !important;
+        margin-bottom: 20px;
+    }
+
+    #recent-reviews {
+
+        .box {
+            flex-basis: 100% !important;
+            place-items: center;
+
+            .recent-review-image {
+                height: 450px;
+            }
+
+        }
+    }
+
+
+    #post-comment {
+
+        .posts-comments-box {
+            flex-basis: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    footer ul li {
+        margin: 0 ;
+    }
+
+    footer small {
+        font-size: 0.7em;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .logo p {
+        display: none;
+    }
+
+    #login-register-button {
+        padding: 10px;
+        font-size: 0.65em;
+    }
+
+    #post-comment {
+        padding: 50px 15px;
+
+        .posts-comments-box {
+            width: 100%;
+        }
+    }
+}

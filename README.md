@@ -15,7 +15,7 @@ A lightweight gaming landing page built with HTML, CSS, and JavaScript. This pro
 - The mobile menu toggle uses the `open` class to show/hide the nav list.
 - Make sure your `style.css` contains the mobile styles and `.open` selector for the navigation.
 
-## 📌 Repo: 
+## 📌 Repo: https://bit.ly/4cSQ8DK
 
 Enjoy building your Game Warriors landing page! ✨
 
